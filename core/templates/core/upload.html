@@ -6,7 +6,17 @@
   <h2 class="my-4">Add a new movie poster</h2>
   <form method="post" enctype="multipart/form-data">
     {% csrf_token %}
-    <input type="file" name="upload" accept="image/*">
+    <!-- <input type="file" name="upload" accept="image/*"> -->
+    <div class="d-flex-col">
+      <label>画像*</label>
+      <label id="upload-file-container" for="photo">
+        <input id="photo" type="file" name="photo"/>
+        <span class="upload-file-wrapper">
+          <i class="fa fa-cloud-upload"></i>
+          <span>ファイルを選択</span>
+        </span>
+      </label>
+    </div>
     <button class="btn btn-dark my-4" type="submit">Submit</button>
   </form>
 

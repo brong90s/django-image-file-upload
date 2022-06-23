@@ -8,7 +8,8 @@
   <h2 class="my-4">Add a new Movie</h2>
   <form method="post" enctype="multipart/form-data">
     {% csrf_token %}
-    {{ form|crispy }}
+    <!-- {{ form|crispy }} -->
+    <input type="file" name="upload" accept="image/*">
     <button class="btn btn-dark my-4" type="submit">Submit</button>
   </form>
 

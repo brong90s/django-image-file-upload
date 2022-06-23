@@ -1,0 +1,46 @@
+/* input[type="file"] {
+  display: none;
+}
+.control-label {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+} */
+
+/* input[type='file'] {
+  color: rgba(0, 0, 0, 0)
+} */
+
+#upload-file-container{
+    position: relative;
+    cursor: pointer;
+}
+
+#upload-file-container input{
+    position: relative;
+    left: 102px; /* Maybe you need to adjust this */
+    top: 0px;
+    height: 26px;
+    /* display: none; */
+}
+
+#upload-file-container .upload-file-wrapper{
+    position: absolute;
+    left: 0;
+    top: -1px;
+    background-color: rgb(27, 27, 196);
+    /* border: 1px solid gray; */
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 2px 0 2px;
+    width: 200px;
+    text-align: center;
+}
+
+/* Flex */
+.d-flex-col {
+  display: flex;
+  flex-direction: column;
+}
